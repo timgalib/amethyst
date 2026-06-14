@@ -24,3 +24,9 @@ dist/
 
 # Large source image — ship the optimized assets/hero-nurse.jpg instead
 nurse-saving-leaf.png
+
+# Wrangler local cache
+.wrangler/
+
+# Large source images (ship optimized assets/* instead)
+full-width-nurse-saving-leaf.png
