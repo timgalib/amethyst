@@ -21,3 +21,6 @@ dist/
 # Confidential source docs — keep local, never publish
 *.pdf
 .pdfpages/
+
+# Large source image — ship the optimized assets/hero-nurse.jpg instead
+nurse-saving-leaf.png
