@@ -56,14 +56,11 @@
     heroAlert: [
       { t: 'Risk detected · care team alerted', tone: 'alert' },
       { t: 'Unsteady gait · staff notified', tone: 'watch' },
-      { t: 'Prolonged bathroom visit · checked', tone: 'watch' },
-      { t: 'Resting comfortably · all clear', tone: 'ok' }
-    ],
-    heroAlert2: [
       { t: 'Sleep quality · 78 Good', tone: 'ok' },
+      { t: 'Prolonged bathroom visit · checked', tone: 'watch' },
       { t: 'Mobility · stable', tone: 'ok' },
       { t: 'Night checks · no falls', tone: 'ok' },
-      { t: 'Respiratory · normal', tone: 'ok' }
+      { t: 'Resting comfortably · all clear', tone: 'ok' }
     ]
   };
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;

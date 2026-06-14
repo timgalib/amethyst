@@ -64,9 +64,11 @@
           </div>
         </div>
         <figure class="hero__art reveal">
-          <img src="assets/hero-nurse.jpg" width="1100" height="1100" alt="A nurse in scrubs kneeling among autumn leaves, gently cradling a single falling maple leaf — symbolising fall prevention for the aging population" />
+          <picture>
+            <source media="(min-width: 601px) and (max-width: 960px)" srcset="assets/hero-nurse-wide.jpg" />
+            <img src="assets/hero-nurse.jpg" width="1100" height="1100" alt="A nurse in scrubs kneeling among autumn leaves, gently cradling a single falling maple leaf — symbolising fall prevention for the aging population" />
+          </picture>
           <div class="hero__badge hero__badge--primary" id="heroAlert" data-tone="alert" aria-hidden="true"><i></i><span>Risk detected · care team alerted</span></div>
-          <div class="hero__badge hero__badge--secondary" id="heroAlert2" data-tone="ok" aria-hidden="true"><i></i><span>Sleep quality · 78 Good</span></div>
         </figure>
       </div>
     </section>
@@ -83,10 +85,12 @@
 
     <!-- ===== MISSION ===== -->
     <section class="mission">
-      <p class="mission__text reveal">
-        Falls are the #1 cause of serious injury in aged care.
-        <span>Our mission is to shift care from reactive to predictive — and protect the dignity of every later year.</span>
-      </p>
+      <div class="mission__inner reveal">
+        <span class="mission__eyebrow">Our mission</span>
+        <p class="mission__problem">Falls are the #1 cause of serious injury in aged care.</p>
+        <hr class="mission__rule" aria-hidden="true" />
+        <p class="mission__statement">Our mission is to shift care from reactive to predictive — and protect the dignity of every later year.</p>
+      </div>
     </section>
 
     <!-- ===== CHALLENGE / STATS ===== -->
