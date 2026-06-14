@@ -220,6 +220,10 @@ a { color: inherit; text-decoration: none; }
 .hero__art { position: relative; }
 .hero__art img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;   /* photo is square — lock it so it never stretches */
+  object-fit: cover;     /* if a box ever forces a non-square size, crop don't distort */
+  display: block;
   border-radius: 28px;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
