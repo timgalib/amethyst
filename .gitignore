@@ -1,0 +1,23 @@
+# OS / editor
+Thumbs.db
+.DS_Store
+*.log
+
+# Node (only if tooling is added later)
+node_modules/
+.cache/
+.parcel-cache/
+dist/
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# Claude / preview tooling
+.claude/
+.preview/
+
+# Confidential source docs — keep local, never publish
+*.pdf
+.pdfpages/

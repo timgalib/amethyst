@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="heroTitle heroDesc" fill="none">
+  <title id="heroTitle">A nurse gently catching a falling autumn leaf</title>
+  <desc id="heroDesc">Symbolic illustration: a caregiver reaches up with open hands to catch a falling autumn leaf, representing Amethyst AI Care's mission to prevent falls and protect the aging population.</desc>
+
+  <defs>
+    <linearGradient id="bgLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4eeff"/>
+      <stop offset="55%" stop-color="#efe8fc"/>
+      <stop offset="100%" stop-color="#fbf3ee"/>
+    </linearGradient>
+    <radialGradient id="auraLight" cx="50%" cy="34%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb45c"/>
+      <stop offset="50%" stop-color="#f4773e"/>
+      <stop offset="100%" stop-color="#d8472f"/>
+    </linearGradient>
+    <linearGradient id="figureGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="handGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6efff"/>
+      <stop offset="100%" stop-color="#d8c6fb"/>
+    </linearGradient>
+    <radialGradient id="catchGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd9a0" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#f4773e" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f4773e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1200" height="900" fill="url(#bgLight)"/>
+  <rect width="1200" height="900" fill="url(#auraLight)"/>
+
+  <!-- ambient AI network motif (subtle, light) -->
+  <g opacity="0.55" stroke="#b79cf0" stroke-width="1.3">
+    <line x1="180" y1="160" x2="320" y2="240"/>
+    <line x1="320" y1="240" x2="240" y2="380"/>
+    <line x1="980" y1="180" x2="860" y2="300"/>
+    <line x1="860" y1="300" x2="1000" y2="420"/>
+    <line x1="120" y1="640" x2="260" y2="700"/>
+  </g>
+  <g fill="#a78bfa">
+    <circle cx="180" cy="160" r="4" opacity="0.7"/>
+    <circle cx="320" cy="240" r="3" opacity="0.6"/>
+    <circle cx="240" cy="380" r="3.5" opacity="0.5"/>
+    <circle cx="980" cy="180" r="4" opacity="0.7"/>
+    <circle cx="860" cy="300" r="3" opacity="0.6"/>
+    <circle cx="1000" cy="420" r="3.5" opacity="0.5"/>
+    <circle cx="120" cy="640" r="3" opacity="0.5"/>
+    <circle cx="260" cy="700" r="3.5" opacity="0.6"/>
+    <circle cx="1080" cy="640" r="3" opacity="0.45"/>
+  </g>
+
+  <!-- falling leaf trail -->
+  <path d="M560 70 C 640 200, 520 300, 600 430" stroke="#f4773e" stroke-width="2.2" stroke-dasharray="2 12" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- glow where the leaf is caught -->
+  <circle cx="600" cy="440" r="150" fill="url(#catchGlow)"/>
+
+  <!-- the falling autumn leaf (maple) -->
+  <g transform="translate(600 430) rotate(-18)">
+    <path d="M0 -58
+             C 14 -40, 30 -44, 40 -52
+             C 34 -34, 44 -28, 58 -28
+             C 44 -16, 48 -2, 56 8
+             C 38 6, 30 18, 30 34
+             C 18 24, 4 28, 0 46
+             C -4 28, -18 24, -30 34
+             C -30 18, -38 6, -56 8
+             C -48 -2, -44 -16, -58 -28
+             C -44 -28, -34 -34, -40 -52
+             C -30 -44, -14 -40, 0 -58 Z"
+          fill="url(#leafGrad)"/>
+    <path d="M0 46 L0 -50 M0 0 L26 -22 M0 0 L-26 -22 M0 14 L22 4 M0 14 L-22 4"
+          stroke="#a8331f" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- caregiver figure: reaching upward with open, cupped hands -->
+  <g transform="translate(600 470)">
+    <!-- soft shadow under figure -->
+    <ellipse cx="0" cy="392" rx="150" ry="24" fill="#7c3aed" opacity="0.16" filter="url(#soft)"/>
+
+    <!-- body / scrubs -->
+    <path d="M-78 160
+             C -92 250, -86 330, -70 392
+             L 70 392
+             C 86 330, 92 250, 78 160
+             C 70 110, 40 86, 0 86
+             C -40 86, -70 110, -78 160 Z"
+          fill="url(#figureGrad)"/>
+    <!-- care cross emblem on chest -->
+    <g transform="translate(0 210)" fill="#ffffff" opacity="0.95">
+      <rect x="-9" y="-26" width="18" height="52" rx="4"/>
+      <rect x="-26" y="-9" width="52" height="18" rx="4"/>
+    </g>
+
+    <!-- head -->
+    <circle cx="0" cy="40" r="48" fill="url(#handGrad)"/>
+    <!-- nurse cap hint -->
+    <path d="M-44 24 C -20 4, 20 4, 44 24 C 30 18, -30 18, -44 24 Z" fill="#ffffff" opacity="0.9"/>
+
+    <!-- arms reaching up -->
+    <path d="M-58 150 C -120 70, -120 -30, -70 -90"
+          stroke="url(#figureGrad)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M58 150 C 120 70, 120 -30, 70 -90"
+          stroke="url(#figureGrad)" stroke-width="34" stroke-linecap="round"/>
+
+    <!-- cupped hands reaching toward the leaf -->
+    <g fill="url(#handGrad)">
+      <path d="M-92 -96 C -84 -120, -56 -126, -46 -104 C -40 -118, -18 -120, -16 -98 C -8 -112, 8 -108, 8 -90 C 8 -64, -16 -52, -46 -54 C -74 -56, -94 -72, -92 -96 Z"/>
+      <path d="M92 -96 C 84 -120, 56 -126, 46 -104 C 40 -118, 18 -120, 16 -98 C 8 -112, -8 -108, -8 -90 C -8 -64, 16 -52, 46 -54 C 74 -56, 94 -72, 92 -96 Z" transform="translate(40 0)"/>
+    </g>
+  </g>
+</svg>
