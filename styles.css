@@ -290,8 +290,8 @@ a { color: inherit; text-decoration: none; }
 }
 .trust__item svg { flex: 0 0 auto; width: 18px; height: 18px; color: var(--violet); }
 
-/* Mobile: tidy 2x2 grid of restrained amethyst chips */
-@media (max-width: 640px) {
+/* Tablet & mobile: tidy 2x2 grid of restrained amethyst chips */
+@media (max-width: 960px) {
   .trust__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -501,7 +501,8 @@ a { color: inherit; text-decoration: none; }
    ============================================================ */
 .section--soft { max-width: none; background: var(--bg-soft); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
 .section--soft > .section__head,
-.section--soft > .steps { max-width: var(--maxw); margin-left: auto; margin-right: auto; }
+.section--soft > .steps,
+.section--soft > .cards { max-width: var(--maxw); margin-left: auto; margin-right: auto; }
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
