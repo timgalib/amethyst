@@ -51,6 +51,43 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
+  /* ---- hero alert badges: cycle through live AusAge360 messages ---- */
+  var badgeMessages = {
+    heroAlert: [
+      { t: 'Risk detected · care team alerted', tone: 'alert' },
+      { t: 'Unsteady gait · staff notified', tone: 'watch' },
+      { t: 'Prolonged bathroom visit · checked', tone: 'watch' },
+      { t: 'Resting comfortably · all clear', tone: 'ok' }
+    ],
+    heroAlert2: [
+      { t: 'Sleep quality · 78 Good', tone: 'ok' },
+      { t: 'Mobility · stable', tone: 'ok' },
+      { t: 'Night checks · no falls', tone: 'ok' },
+      { t: 'Respiratory · normal', tone: 'ok' }
+    ]
+  };
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  Object.keys(badgeMessages).forEach(function (id, idx) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var span = el.querySelector('span');
+    var list = badgeMessages[id];
+    var i = 0;
+    function apply(n) { el.setAttribute('data-tone', list[n].tone); span.textContent = list[n].t; }
+    apply(0);
+    if (reduceMotion || list.length < 2) return;
+    setTimeout(function () {
+      setInterval(function () {
+        el.classList.add('is-swapping');
+        setTimeout(function () {
+          i = (i + 1) % list.length;
+          apply(i);
+          el.classList.remove('is-swapping');
+        }, 320);
+      }, 3400);
+    }, idx * 1700);
+  });
+
   /* ---- contact form (Formspree, no backend) ---- */
   var form = document.getElementById('contactForm');
   var statusEl = document.getElementById('formStatus');
